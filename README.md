@@ -10,19 +10,17 @@ npm install
 # 开发的时候在本地启 127.0.0.1:8383，并开始热加载
 npm run dev
 
-```bash
-// 可自己在 webpack.config.dev.js 文件中修改host 和 port
-// 起本地服务
-devServer: {  
-  contentBase: './dist/',  
-  historyApiFallback: true,  
-  inline: true,  
-  hot: true,  
-  host: '127.0.0.1',
-  // host: '192.168.0.229',
-  port: '8383'
-}
-```
+  // /* 可自己在 webpack.config.dev.js 文件中修改host 和 port */
+  // 起本地服务
+  devServer: {  
+    contentBase: './dist/',  
+    historyApiFallback: true,  
+    inline: true,  
+    hot: true,  
+    host: '127.0.0.1',
+    // host: '192.168.0.229',
+    port: '8383'
+  }
 
 #### production的发布时打包，生成文件都在dist文件夹内
 npm run build
@@ -31,7 +29,7 @@ npm run build
 
 ### 目录结构
 
-```
+```bash
 └─src                                      // src 文件夹。里面都是开发环境下的文件内容  
 │    │
 │    ├─common                              // 公共引用文件
