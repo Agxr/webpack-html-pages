@@ -1,0 +1,151 @@
+img {
+  width: 400px;
+}
+/* 头部导航栏 */
+.top-head {
+  height: 1.1733rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3dc53f;
+}
+.top-head span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.1733rem;
+  height: 1.1733rem;
+}
+.top-head .back em {
+  display: block;
+  width: 0.6rem;
+  height: 0.6rem;
+  background: url("../../images/back-icon.png") no-repeat center;
+  background-size: 2.8rem;
+  background-position: -0px -0px;
+  cursor: pointer;
+}
+.top-head h2 {
+  font-size: 0.52rem;
+  color: #fff;
+}
+/* 主内容区 */
+.box {
+  padding: 0.2667rem;
+  background-color: #fff;
+  -webkit-overflow-scrolling: touch;
+}
+/* 登录 */
+.login-box h4 {
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+.login-box .login-item {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 0.2667rem 0.1rem;
+}
+.login-item-border {
+  position: relative;
+}
+.login-item-border::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: " ";
+  width: 100%;
+  height: 1px;
+  background-color: #dedede;
+}
+.login-item .login-item-icon {
+  display: block;
+  width: 0.8rem;
+  height: 0.8rem;
+  background: url("../../images/back-icon.png") no-repeat center;
+  background-size: 5rem;
+  background-position: -1.1733rem 0.11rem;
+}
+.login-item .password-icon {
+  background-position: -1.95rem 0.11rem;
+}
+.login-item input {
+  height: 1rem;
+  font-size: 0.5867rem;
+  border: none;
+  outline: none;
+}
+.login-item-regis {
+  justify-content: flex-end;
+}
+.login-item-regis span {
+  display: flex;
+  align-items: center;
+  font-size: 0.4267rem;
+  color: #ee2a08;
+  cursor: pointer;
+}
+.login-item-regis .regis-regis-icon, .login-item-regis .regis-forget-icon {
+  width: 0.6rem;
+  height: 0.6rem;
+  background-size: 3.6rem;
+  background-position: -3.04rem 0.14rem;
+}
+.login-item-regis .regis-forget-icon {
+  background-position: -2.48rem 0.14rem;
+}
+.login-item-regis .login-item-regis-forget {
+  margin-left: 0.8rem;
+  color: #6f6a6a;
+}
+.login-item-btn {
+  justify-content: center;
+  margin-top: 1rem;
+}
+.login-item-btn .login-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 1.2rem;
+  font-size: 0.72rem;
+  color: #fff;
+  background-color: #3dc53f;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+/* END 登录 */
+/* 注册 并附带找回密码 */
+.regis-box {
+  display: none;
+  transform: translateY(-500px);
+  transition: all 0.4s;
+}
+.regis-item .yan-icon {
+  background-position: -2.72rem 0.11rem;
+}
+.regis-item .regis-yan {
+  width: 60%;
+}
+.regis-item .regis-yan-btn {
+  width: 28%;
+  color: #3dc53f;
+  font-size: 0.48rem;
+  cursor: pointer;
+}
+.regis-item .regis-yan-timeout {
+  display: none;
+  color: #666;
+  text-align: center;
+}
+.regis-item-login .login-item-regis-login {
+  color: #3dc53f;
+}
+.regis-item-login .login-item-regis-login  .regis-login-icon {
+  background-position: -0.8533rem 0.14rem;
+}
+.regis-item-btn .reigs-btn {
+  background-color: #ee2a08;
+}
+/* END 注册 */
